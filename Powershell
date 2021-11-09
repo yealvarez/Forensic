@@ -1,5 +1,8 @@
 ==============================================================================
 [+] Powershell Find Hidden information with Data Streams
 ==============================================================================
-
+# Find Hidden information with Data Streams
 gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' 
+
+# Open File with Hidden information with Data Streams
+get-content -path C:\WINDOWS\system32\simple_file1.txt -stream secret_file1.txt
