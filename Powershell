@@ -1,0 +1,5 @@
+==============================================================================
+[+] Powershell Find Hidden information with Data Streams
+==============================================================================
+
+gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' 
