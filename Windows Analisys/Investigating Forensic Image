@@ -5,17 +5,27 @@
 # Gui
 Redline-2.0.msi
 
-# Volarility cmd
+# 1. Volarility cmd
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" imageinfo
 
-# Use the kdbgscan plugin to scan the kernel debugger and list the suggested profiles
+# 2. Use the kdbgscan plugin to scan the kernel debugger and list the suggested profiles
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" kdbgscan
 
-# Volatility displays a list of suggested profiles. We must choose a profile from the list that could be a close match to the profile on RAM.
-volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 netscan
+# 3. Volatility displays a list of suggested profiles. We must choose a profile from the list that could be a close match to the profile on RAM.
+# volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 netscan
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** netscan
 
-# Observe the same process in the process list format
-volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 pslist
+# 4. Observe the same process in the process list format
+# volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 pslist
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** pslist
+
+# 5. To view the files used by the process
+# volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 handles -p 1896 -t file
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** handles -p **** -t file
+
+# 6. To view the registries associated with the process
+# volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 handles -p 1896 -t key
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** handles -p **** -t key
 
 
 
