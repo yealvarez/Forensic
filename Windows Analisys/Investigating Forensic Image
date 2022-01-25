@@ -1,5 +1,21 @@
 ==============================================================================
-[+] Investigating Forensic Image of Windows RAM
+[+] Investigating Forensic Image of Windows RAM with Linux tools
+==============================================================================
+
+# To list all the files and directories
+strings Windows_RAM.mem | grep -i "^[a-z]:\\\\" | sort | uniq
+
+# To extract all the URLs
+strings Windows_RAM.mem | egrep "^https?://" | sort | uniq
+
+# To view the IP addresses
+strings Windows_RAM.mem | egrep -oE ‘[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}’
+
+# To filter data containing this address
+strings Windows_RAM.mem | egrep "172.20.20.9"
+
+==============================================================================
+[+] Investigating Forensic Image of Windows RAM with Volarility
 ==============================================================================
 
 # Gui
@@ -30,7 +46,6 @@ volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Im
 # 7. To list the process tree
 # volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 pstree
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** pstree
-
 
 ## KDBG stands for Kernel Debugging Data Block and is (as the name implies) used for debugging purposes. It contains lots of useful information about the investigated system, 
 ## and its signature is distinct for every Windows operating system, thus finding KDBG reveals what OS we have on the table.
