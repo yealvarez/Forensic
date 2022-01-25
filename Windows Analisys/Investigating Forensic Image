@@ -8,14 +8,14 @@ Redline-2.0.msi
 # Volarility cmd
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" imageinfo
 
-
 # Use the kdbgscan plugin to scan the kernel debugger and list the suggested profiles
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" kdbgscan
 
 # Volatility displays a list of suggested profiles. We must choose a profile from the list that could be a close match to the profile on RAM.
-volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 netscan in Command Prompt
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 netscan
 
-
+# Observe the same process in the process list format
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 pslist
 
 
 
