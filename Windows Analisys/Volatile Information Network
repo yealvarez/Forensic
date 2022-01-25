@@ -21,3 +21,6 @@ net file
 # GUI
 NetworkOpenedFiles.exe
 
+#What is UPN (User Principal Name)?
+#In Windows Active Directory, a User Principal Name (UPN) is the name of a system user in an email address format. A UPN (for example: john.doe@domain.com) consists of the user name (logon name), separator (the @ symbol), and domain name (UPN suffix).
+
