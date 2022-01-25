@@ -2,15 +2,22 @@
 [+] Acquiring Volatile Information from a Live Windows System
 ==============================================================================
 
-# With PsTools
+# PsTools
+
+# Command Prompt window will now display two results: Users Logged on locally (local user, Administrator of the local machine) and Users Logged on via resource shares.
 PsLoggedon64.exe
+
+# To list the logon sessions, their types, and the processes running under them, use the -p switch in combination with logonsessions64.exe
 logonsessions64.ex
 
-# With Windows Native Tools
+# Windows Native Tools
 
 # which will list the IP addresses of all the connected sessions on the host machine
 net sessions
 
 #  Utility to retrieve information pertaining to all the open shared files with respect to Windows Server
 net file
+
+# GUI
+NetworkOpenedFiles.exe
 
