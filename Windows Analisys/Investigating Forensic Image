@@ -27,6 +27,9 @@ volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Im
 # volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 handles -p 1896 -t key
 volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** handles -p **** -t key
 
+# 7. To list the process tree
+# volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win2008R2SP0x64 pstree
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" --profile=Win************** pstree
 
 
 ## KDBG stands for Kernel Debugging Data Block and is (as the name implies) used for debugging purposes. It contains lots of useful information about the investigated system, 
