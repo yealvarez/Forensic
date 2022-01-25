@@ -4,3 +4,6 @@
 
 # Gui
 Redline-2.0.msi
+
+# Volarility cmd
+volatility_2.6_win64_standalone.exe -f "C:\CHFI-Tools\Evidence Files\Forensic Images\Windows_RAM.mem" imageinfo
