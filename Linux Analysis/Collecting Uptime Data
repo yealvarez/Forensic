@@ -1,0 +1,17 @@
+hostname
+date
+cat /etc/timezone
+
+# Epoch time https://www.epochconverter.com/
+date +%s
+
+# Last restart
+uptime
+
+# Network Information
+ip addr show
+
+# Detecting Promiscuous Mode
+ifconfig <interface> -promisc
+
+
