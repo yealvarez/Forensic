@@ -87,6 +87,30 @@ ausearch -ui 0 --interpret
 #  ELF System stores shared libraries
 readelf --file-header /sbin/mount.fuse
 
+# Collecting User Account Information
+# Local User
+/etc/passwd
+cut -d: -f1 /etc/passwd
+
+# x – Password (‘x’ denotes encrypted), 0 – User ID (‘0’ is reserved for root), 0 – Group ID, root – User ID information, /root – Home directory, /bin/bash – Absolute path to the user’s login shell
+
+# Logged In users
+w
+last -f /var/log/wtmp
+
+# Show Logs user's with authentication and authorization events.
+
+cat /var/log/auth.log
+grep sudo /var/log/auth.log
+
+
+
+
+
+
+
+
+
 
 
 
