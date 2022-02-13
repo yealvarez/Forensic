@@ -103,6 +103,8 @@ last -f /var/log/wtmp
 cat /var/log/auth.log
 grep sudo /var/log/auth.log
 
+min 17
+
 
 
 
