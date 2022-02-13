@@ -60,6 +60,9 @@ cat /proc/partitions
 # List swapsize 
 cat /proc/swaps
 
+# Display kernel ring buffers
+dmesg
+
 ==============================================================================
 [+] Collecting User Events
 ==============================================================================
