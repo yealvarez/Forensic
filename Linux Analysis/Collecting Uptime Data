@@ -1,3 +1,7 @@
+==============================================================================
+[+] Collecting Lnux Data
+==============================================================================
+
 hostname
 date
 cat /etc/timezone
@@ -35,6 +39,20 @@ lsof -i -P -n | grep LISTEN
 lsof
 # filter by user
 lsof -u <user name>
+
+# Mountes Files
+mount
+
+# Free Space
+df
+
+# List modules loaded in the kernel
+lsmod
+modinfo <kernel_module>
+
+
+
+
 
 
 
