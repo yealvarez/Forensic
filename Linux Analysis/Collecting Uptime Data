@@ -50,6 +50,16 @@ df
 lsmod
 modinfo <kernel_module>
 
+# List Running Processes
+ps
+ps auxww
+
+# List disk partitions 
+cat /proc/partitions
+
+# List swapsize 
+cat /proc/swaps
+
 ==============================================================================
 [+] Collecting User Events
 ==============================================================================
