@@ -60,8 +60,19 @@ cat /proc/partitions
 # List swapsize 
 cat /proc/swaps
 
-# Display kernel ring buffers
+# Collecting Kernel Messages and Display kernel ring buffers
 dmesg
+
+# Collecting System Information
+cat /proc/cpuinfo
+cat /proc/self/mounts 
+
+# Collecting Kernel Information
+uname -r
+cat /proc/version
+hostnamectl | grep kernel
+
+
 
 ==============================================================================
 [+] Collecting User Events
