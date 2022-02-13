@@ -31,6 +31,14 @@ netstat -putan
 netstat -tulpn
 lsof -i -P -n | grep LISTEN
 
+# List All Files with Active Processes
+lsof
+# filter by user
+lsof -u <user name>
+
+
+
+
 
 
 
