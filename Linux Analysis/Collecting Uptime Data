@@ -14,4 +14,7 @@ ip addr show
 # Detecting Promiscuous Mode
 ifconfig <interface> -promisc
 
+#  Network Interfaces
+netstat -i
+
 
