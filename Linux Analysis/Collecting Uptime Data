@@ -50,6 +50,21 @@ df
 lsmod
 modinfo <kernel_module>
 
+==============================================================================
+[+] Collecting User Events
+==============================================================================
+
+# Linux user ID
+id root
+
+# Track User Events
+ausearch -ui 0 --interpret
+
+#  ELF System stores shared libraries
+readelf --file-header /sbin/mount.fuse
+
+
+
 
 
 
