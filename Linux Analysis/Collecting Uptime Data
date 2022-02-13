@@ -25,6 +25,11 @@ ip r
 namp -sT localhost
 nmap -sU localhost
 
+# Finding Programs Associated with a Port
+# -t tcp, -u UDP, -l listenig ports, -p list PID, -n address in numerical form.
+netstat -putan
+netstat -tulpn
+
 
 
 
