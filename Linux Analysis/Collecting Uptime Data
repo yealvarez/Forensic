@@ -17,4 +17,14 @@ ifconfig <interface> -promisc
 #  Network Interfaces
 netstat -i
 
+# Print Routing Tables
+netstat -rn
+ip r
+
+# Open Port Information
+namp -sT localhost
+nmap -sU localhost
+
+
+
 
