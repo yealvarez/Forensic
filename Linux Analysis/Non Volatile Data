@@ -23,6 +23,15 @@ w
 last -f /var/log/wtmp
 
 # Show Logs user's with authentication and authorization events.
-
 cat /var/log/auth.log
 grep sudo /var/log/auth.log
+
+# Collecting System Logs Data
+cat /var/log/syslog
+
+# Collecting Linux kernel logs
+cat /var/log/kern.log
+
+
+
+
