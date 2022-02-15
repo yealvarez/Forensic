@@ -82,6 +82,13 @@ readelf --file-header /sbin/mount.fuse
 # Logged In users
 w
 
+# Collecting User History Commands
+history
+echo $HISTFILE
+
+# Hidden Files
+ls -al
+
 
 
 
