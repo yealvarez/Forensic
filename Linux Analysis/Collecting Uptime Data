@@ -63,6 +63,9 @@ cat /proc/swaps
 # Collecting Kernel Messages and Display kernel ring buffers
 dmesg
 
+# Collecting Kernel Information
+uname -r
+
 ==============================================================================
 [+] Collecting User Events
 ==============================================================================
@@ -75,6 +78,10 @@ ausearch -ui 0 --interpret
 
 #  ELF System stores shared libraries
 readelf --file-header /sbin/mount.fuse
+
+# Logged In users
+w
+
 
 
 
