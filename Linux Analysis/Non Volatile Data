@@ -46,6 +46,12 @@ Log Location              Content Description
 /var/log/debug            Debugging log messages
 /var/log/dpkg.log         Package installation or removal logs
 
+# Collecting User History Commands
+cat /home/<user>/.zsh_history
+
+
+
+
 
 
  
