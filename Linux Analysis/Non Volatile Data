@@ -32,6 +32,28 @@ cat /var/log/syslog
 # Collecting Linux kernel logs
 cat /var/log/kern.log
 
+Log Location              Content Description
+/var/log/auth.log         System authorization information, including user logins and authentication mechanism
+/var/log/kern.log         Initialization of kernels, kernel errors or informational messages sent from the kernel
+/var/log/faillog          Failed user login attempts 
+/var/log/lpr.log          Printer logs
+/var/log/mail.*           All mail server message logs 
+/var/log/mysql.*          All MySQL server logs
+/var/log/apache2/*        All Apache web server logs
+/var/log/apport.log       Application crash report/log
+/var/log/lighttpd/*       Lighttpd web server log files directory  
+/var/log/daemon.log       Running services, such as squid and ntpd
+/var/log/debug            Debugging log messages
+/var/log/dpkg.log         Package installation or removal logs
+
+
+
+ 
+
+
+
+
+
 
 
 
