@@ -89,6 +89,13 @@ echo $HISTFILE
 # Hidden Files
 ls -al
 
+# Collecting Suspicious Information
+# Identify Rootkits
+rkhunter --check --rwo 
+chkrootkit
+
+
+
 
 
 
