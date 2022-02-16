@@ -94,6 +94,8 @@ ls -al
 rkhunter --check --rwo 
 chkrootkit
 
+# File Signature Analysis (First 20 bytes)
+xxd <file.extension> | head
 
 
 
