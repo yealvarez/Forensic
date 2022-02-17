@@ -22,6 +22,10 @@ cut -d: -f1 /etc/passwd
 w
 last -f /var/log/wtmp
 
+==============================================================================
+[+] Collecting User Events
+==============================================================================
+
 # Show Logs user's with authentication and authorization events.
 cat /var/log/auth.log
 grep sudo /var/log/auth.log
