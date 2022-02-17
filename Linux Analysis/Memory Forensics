@@ -41,5 +41,9 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_p
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_netstat
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_netstat
 
+# List Process tree associated
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_pstree
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_pstree
+
 
 
