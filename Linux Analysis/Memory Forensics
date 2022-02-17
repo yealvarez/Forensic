@@ -9,3 +9,13 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_i
 # extract data arp
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_arp
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_arp
+
+# Listing Open Files
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_lsof
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_lsof
+
+# Collecting Bash Information
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_bash
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_bash
+
+
