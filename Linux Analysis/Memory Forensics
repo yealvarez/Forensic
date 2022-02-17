@@ -29,9 +29,17 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_d
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_mount
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_mount
 
-# List kernel modules currently loadedin memory
+# List kernel modules currently loaded in memory
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_lsmod
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_lsmod
+
+# List all the processes running in memory
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_pslist
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_pslist
+
+# List network connection established
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_netstat
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_netstat
 
 
 
