@@ -101,6 +101,20 @@ strings <image_file>
 strings -t d <image_file> | grep - iE "search_strings"
 strings -t d <image_file> | grep - iE "confidential"
 
+# Finf Writables Files
+find / -writable -type f 2>/dev/null | grep "search"
+
+# Display details of a file system
+fsstat -i <input_file> <file.extension>
+fsstat -i raw Evidence.dd
+
+# List recently deleted files
+fls -i <image_type> <image_name>
+fls -i raw Evidence.dd
+
+# Display the metadata of a file
+istat -f <fstype> -i <imgtype> <imagefile_name> <inode_number>
+istat -f ext4 -i raw Evidence.dd 651
 
 
 
