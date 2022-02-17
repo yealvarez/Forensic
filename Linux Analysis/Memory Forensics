@@ -20,6 +20,8 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_b
 
 # Collecting System Information
 # Retrieve informationstored in the kernel ring buffer
+# "The kernel ring buffer is a data structure that records messages related to the operation of the kernel. 
+# A ring buffer is a special kind of buffer that is always a constant size, removing the oldest messages when new messages are received."
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_dmesg
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_dmesg
 
