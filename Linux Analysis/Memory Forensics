@@ -18,4 +18,18 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_l
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_bash
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_bash
 
+# Collecting System Information
+# Retrieve informationstored in the kernel ring buffer
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_dmesg
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_dmesg
+
+# Prints  all the attached filesystem
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_mount
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_mount
+
+# List kernel modules currently loadedin memory
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_lsmod
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_lsmod
+
+
 
