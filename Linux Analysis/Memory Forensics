@@ -1,5 +1,5 @@
 ==============================================================================
-[+] Collecting Memory Data
+[+] Collecting Memory Data with Volatility
 ==============================================================================
 
 # extract data ifconfig
@@ -45,5 +45,15 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_n
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_pstree
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_pstree
 
+# Identify remote/hidden code injections in memory
+python vol.py --file=<file_name> profile=<Linux_profile_name> linux_malfind
+python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_malfind
+
+==============================================================================
+[+] Collecting Memory Data with PhotoRec Tool
+==============================================================================
+
+# Recover deleted files and lost data
+photorec <Imagefile_name>
 
 
