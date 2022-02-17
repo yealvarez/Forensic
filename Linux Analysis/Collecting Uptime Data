@@ -103,6 +103,8 @@ file <options> <file_name>
 # Determine contents strings
 strings <image_file>
 strings -t d <image_file> | grep - iE "search_strings"
+strings -t d <image_file> | grep - iE "confidential"
+
 
 
 
