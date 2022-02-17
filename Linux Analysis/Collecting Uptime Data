@@ -97,7 +97,12 @@ chkrootkit
 # File Signature Analysis (First 20 bytes)
 xxd <file.extension> | head
 
+# Determine type of file
+file <options> <file_name>
 
+# Determine contents strings
+strings <image_file>
+strings -t d <image_file> | grep - iE "search_strings"
 
 
 
