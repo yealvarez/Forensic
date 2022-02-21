@@ -53,6 +53,12 @@ Log Location              Content Description
 # Collecting User History Commands
 cat /home/<user>/.zsh_history
 
+# Scheduled Task
+/var/spool/cron/ 
+/etc/cron.daily 
+
+
+
 
 
 
