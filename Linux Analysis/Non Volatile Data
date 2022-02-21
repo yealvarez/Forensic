@@ -57,6 +57,9 @@ cat /home/<user>/.zsh_history
 /var/spool/cron/ 
 /etc/cron.daily 
 
+# Command History
+cd /home/<user>
+cat .bash_history
 
 
 
