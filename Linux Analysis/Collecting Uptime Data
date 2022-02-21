@@ -15,6 +15,9 @@ uptime
 # Network Information
 ip addr show
 
+# ARP cache stored
+arp
+
 # Detecting Promiscuous Mode
 ifconfig <interface> -promisc
 
@@ -53,6 +56,10 @@ modinfo <kernel_module>
 # List Running Processes
 ps
 ps auxww
+
+# To find the ports related to a particular process
+ss -l -p -n | grep <PID>
+
 
 # List disk partitions 
 cat /proc/partitions
@@ -128,6 +135,8 @@ aureport
 # Utility allows you to search Audit log
 id <name>
 ausearch -ui <userID> --interpret
+
+
 
 
 
