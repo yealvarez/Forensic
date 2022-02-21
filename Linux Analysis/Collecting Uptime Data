@@ -125,6 +125,11 @@ apt install -y auditd
 # Login attempts made to the system
 aureport 
 
+# Utility allows you to search Audit log
+id <name>
+ausearch -ui <userID> --interpret
+
+
 
 
 
