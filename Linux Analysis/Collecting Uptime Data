@@ -137,6 +137,7 @@ id <name>
 ausearch -ui <userID> --interpret
 
 # The clipboard stores the details of files or text copied recently.
+apt install xclip
 xclip 
 
 
