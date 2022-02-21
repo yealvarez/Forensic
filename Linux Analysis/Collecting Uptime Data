@@ -77,6 +77,8 @@ readelf --file-header /sbin/mount.fuse
 
 # Logged In users
 w
+# Last Login Sessions
+last -a
 
 # Collecting User History Commands
 history
@@ -117,7 +119,11 @@ istat -f <fstype> -i <imgtype> <imagefile_name> <inode_number>
 istat -f ext4 -i raw Evidence.dd 651
 
 
+# Audit records tool
+apt install -y auditd
 
+# Login attempts made to the system
+aureport 
 
 
 
