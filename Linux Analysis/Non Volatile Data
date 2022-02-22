@@ -67,6 +67,9 @@ cd /proc
 # In the same bin folder, the update-dev file stores data about login sessions of different users on the Linux system
 /bin/update-dev
 
+# Boot folder to view the bootloader files of the Linux OS present on the hard-disk image.
+# Verifying bootloader files helps in finding the presence of any boot-based malware.
+/boot/abi-4.4.0-21-generic
 
 
 
