@@ -64,6 +64,8 @@ cat .bash_history
 # The clipboard stores the details of files or text copied recently.
 cd /proc
 
+# In the same bin folder, the update-dev file stores data about login sessions of different users on the Linux system
+/bin/update-dev
 
 
 
