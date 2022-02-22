@@ -75,6 +75,16 @@ cd /proc
 # Select the dev folder to view information about different audio devices, media devices, etc., connected to the system.
 /dev
 
+# The etc folder contains information pertaining to system configuration files.
+/etc
+
+# The home folder stores details of user home directories. It helps users view the files and folders stored on the system.
+
+/home/<user>
+
+
+
+
 
 
 
