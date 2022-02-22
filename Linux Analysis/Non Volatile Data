@@ -84,6 +84,8 @@ cd /proc
 # The apt folder contains the history.log file, which stores the history of actions performed on the Linux machine. 
 /var/log/apt/history.log
 
+# The cups folder contains access logs, error logs, and page logs. Select the cups --> access.log files to view the logs under the Text --> Strings tabs.
+/var/log/cups/access.log
 
 
 
