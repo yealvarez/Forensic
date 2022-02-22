@@ -79,7 +79,6 @@ cd /proc
 /etc
 
 # The home folder stores details of user home directories. It helps users view the files and folders stored on the system.
-
 /home/<user>
 
 
