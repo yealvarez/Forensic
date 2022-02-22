@@ -71,6 +71,10 @@ cd /proc
 # Verifying bootloader files helps in finding the presence of any boot-based malware.
 /boot/abi-4.4.0-21-generic
 
+# The dev folder stores information about devices connected to the system. 
+# Select the dev folder to view information about different audio devices, media devices, etc., connected to the system.
+/dev
+
 
 
 
