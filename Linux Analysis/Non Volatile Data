@@ -81,6 +81,9 @@ cd /proc
 # The home folder stores details of user home directories. It helps users view the files and folders stored on the system.
 /home/<user>
 
+# The apt folder contains the history.log file, which stores the history of actions performed on the Linux machine. 
+/var/log/apt/history.log
+
 
 
 
