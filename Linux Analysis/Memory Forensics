@@ -2,8 +2,9 @@
 [+] Tools to performed Linux Forensics Memory dump
 ==============================================================================
 
-# Run the command make clean to obtain a clean build of the Linux profile
+# Run the command make clean to obtain a clean build of the Linux profile and Now, issue the ls command to view the module.dwarf file created
 make clean
+ls
 
 # Run the command apt install dwarfdump to download and install the dwarfdump utility
 apt install dwarfdump
@@ -17,12 +18,22 @@ apt install linux-headers-generic
 # Issue the make command to build the Linux kernel profile.
 make
 
+# Issue the command ls /boot/ to view the files used in booting the operating system. You will observer a file named System.map-4.15.0.45-generic.
+ls /boot/
+
+# Create a Zip file of your new profile with name of the OS (here, it is Ubuntu1604-06) by running the command:
+zip volatility/plugins/linux/Ubuntu1604-06.zip tools/linux/module.dwarf /boot/System.map-4.15.0-45-generic
+
+# The profile of the Linux system for Volatility has been created with the name LinuxUbuntu1604-06x64. Now, check whether the profile is recognized by Volatility using the command:
+python vol.py --info | grep Linux.
+
 ==============================================================================
 [+] Collecting Memory Data with Volatility
 ==============================================================================
 # extract data ifconfig
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_ifconfig
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_ifconfig
+python vol.py --file=/home/jason/Linux_RAM.dd --profile=LinuxUbuntu1604-06x64 linux_pslist
 
 # extract data arp
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_arp
@@ -71,7 +82,11 @@ python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_m
 [+] Collecting Memory Data with PhotoRec Tool
 ==============================================================================
 
+# To install the PhotoRec tool
+apt install testdisk.
+
 # Recover deleted files and lost data
 photorec <Imagefile_name>
+photorec Linux_RAM.dd
 
 
