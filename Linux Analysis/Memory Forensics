@@ -1,6 +1,7 @@
 ==============================================================================
-[+] Collecting Memory Data with Volatility
+[+] Tools to performed Linux Forensics Memory dump
 ==============================================================================
+
 # Run the command make clean to obtain a clean build of the Linux profile
 make clean
 
@@ -10,6 +11,15 @@ apt install dwarfdump
 # Install build-essential package by issuing the command apt install build-essential.
 apt install build-essential
 
+# Install Linux headers for the respective Linux profile.
+apt install linux-headers-generic
+
+# Issue the make command to build the Linux kernel profile.
+make
+
+==============================================================================
+[+] Collecting Memory Data with Volatility
+==============================================================================
 # extract data ifconfig
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_ifconfig
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_ifconfig
