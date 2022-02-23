@@ -1,6 +1,11 @@
 ==============================================================================
 [+] Collecting Memory Data with Volatility
 ==============================================================================
+# Run the command make clean to obtain a clean build of the Linux profile
+make clean
+
+# Run the command apt install dwarfdump to download and install the dwarfdump utility
+apt install dwarfdump
 
 # extract data ifconfig
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_ifconfig
