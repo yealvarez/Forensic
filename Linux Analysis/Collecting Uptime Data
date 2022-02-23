@@ -1,7 +1,9 @@
 ==============================================================================
 [+] Collecting Linux Data
 ==============================================================================
+# If you are experiencing issues with internet connectivity, then run the commands ifdown -a and ifup -a, 
 
+# Host name and date
 hostname
 date
 cat /etc/timezone
