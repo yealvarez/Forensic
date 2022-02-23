@@ -7,6 +7,9 @@ make clean
 # Run the command apt install dwarfdump to download and install the dwarfdump utility
 apt install dwarfdump
 
+# Install build-essential package by issuing the command apt install build-essential.
+apt install build-essential
+
 # extract data ifconfig
 python vol.py --file=<file_name> profile=<Linux_profile_name> linux_ifconfig
 python vol.py --file=../ubuntu_ramdump.dd --profile=LinuxUbuntu_16_04x64 linux_ifconfig
