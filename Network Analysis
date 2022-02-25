@@ -1,0 +1,9 @@
+==============================================================================
+[+] Wireshark Analysis
+==============================================================================
+
+1. Display Filtering by Protocol: Type the protocol such as arp, http, tcp, udp, dns, and ip, in the filter box
+2. Monitoring Specific Ports: tcp.port==23 | ip.addr==192.168.1.100 machine | ip.addr==192.168.1.100 && tcp.port=23
+3. Filtering by Multiple IP Addresses: ip.addr == 10.0.0.4 or ip.addr == 10.0.0.5
+4. Filtering by IP Address: ip.addr == 10.0.0.4
+5. Other Filters: ip.dst == 10.0.1.50 && frame.pkt_len > 400  | ip.addr == 10.0.1.12 && icmp && frame.number > 15 && frame.number < 30 | ip.src==205.153.63.30 or ip.dst==205.153.63.30
