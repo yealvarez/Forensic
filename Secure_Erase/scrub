@@ -1,0 +1,40 @@
+==============================================================================
+[+] Secure Erase
+==============================================================================
+
+sudo scrub /dev/sdc -p dod
+
+scrub -h    
+Usage: scrub [OPTIONS] file [file...]
+  -v, --version           display scrub version and exit
+  -p, --pattern pat       select scrub pattern sequence
+  -b, --blocksize size    set I/O buffer size (default 4m)
+  -s, --device-size size  set device size manually
+  -X, --freespace dir     create dir+files, fill until ENOSPC, then scrub
+  -D, --dirent newname    after scrubbing file, scrub dir entry, rename
+  -f, --force             scrub despite signature from previous scrub
+  -S, --no-signature      do not write scrub signature after scrub
+  -r, --remove            remove file after scrub
+  -L, --no-link           do not scrub link target
+  -R, --no-hwrand         do not use a hardware random number generator
+  -t, --no-threads        do not compute random data in a parallel thread
+  -n, --dry-run           verify file arguments, without writing
+  -h, --help              display this help message
+Available patterns are:
+  nnsa          3-pass   NNSA NAP-14.1-C
+  dod           3-pass   DoD 5220.22-M
+  bsi           9-pass   BSI
+  usarmy        3-pass   US Army AR380-19
+  random        1-pass   One Random Pass
+  random2       2-pass   Two Random Passes
+  schneier      7-pass   Bruce Schneier Algorithm
+  pfitzner7     7-pass   Roy Pfitzner 7-random-pass method
+  pfitzner33   33-pass   Roy Pfitzner 33-random-pass method
+  gutmann      35-pass   Gutmann
+  fastold       4-pass   pre v1.7 scrub (skip random)
+  old           5-pass   pre v1.7 scrub
+  dirent        6-pass   dirent
+  fillzero      1-pass   Quick Fill with 0x00
+  fillff        1-pass   Quick Fill with 0xff
+  verify        1-pass   Quick Fill with 0x00 and verify
+  custom        1-pass   custom="str" 16 chr max, C esc like \r, \xFF, \377, \\
