@@ -1,0 +1,13 @@
+==============================================================================
+[+] Recovery Deleted Files
+==============================================================================
+
+# Config scalpel files to Recovery
+vim /etc/scalpel/scalpel.conf
+
+# Identify drive
+sudo fdisk -l 
+
+# Recovery Deleted Files
+sudo scalpel /dev/sdc
+
